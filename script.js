@@ -5,7 +5,7 @@
 const randomEmail = document.getElementById('result');
 
 //creo array vuoto per contenere l email generate
-let gMail = [];
+// let gMail = [];
 
 // creo ciclo per le 10 random email
 for ( let i = 0; i <= 10; i++){
@@ -15,7 +15,7 @@ for ( let i = 0; i <= 10; i++){
         //codice da eseguire in caso di successo
         const risultato = response.data.response
         // inserisco nell'array la variabile risultato 
-        gMail.push(risultato);
+        // gMail.push(risultato);
         //stampo in pagina la lista
         randomEmail.innerHTML += `<li>${risultato}</li>`;
     })
@@ -23,4 +23,4 @@ for ( let i = 0; i <= 10; i++){
 }
 
 
-console.log(gMail);
+// console.log(gMail);
